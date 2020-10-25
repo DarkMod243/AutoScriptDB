@@ -28,19 +28,19 @@
 <h3 align="center">Installation (Default Version)</h3>
 
   ```html
-wget https://raw.githubusercontent.com/raziman869/AutoScriptDB/master/DB && chmod +x DB && ./DB
+wget https://raw.githubusercontent.com/xiihaiqal/AutoScriptDB/master/DB && chmod +x DB && ./DB
   ```
 
 <h3 align="center">Installation (Experimental)</h3>
 
   ```html
-wget https://raw.githubusercontent.com/raziman869/AutoScriptDB/master/DBE && chmod +x DBE && ./DBE
+wget https://raw.githubusercontent.com/xiihaiqal/AutoScriptDB/master/DBE && chmod +x DBE && ./DBE
   ```
  
 <h3 align="center">Installation (Unstable Early Version)</h3>
 
   ```html
-wget https://raw.githubusercontent.com/raziman869/AutoScriptDB/master/DBM && chmod +x DBM && ./DBM
+wget https://raw.githubusercontent.com/xiihaiqal/AutoScriptDB/master/DBM && chmod +x DBM && ./DBM
   ```
 
 
@@ -50,15 +50,15 @@ Recommended OS: Debian 10 Buster x64
 
 <h3 align="center">Screenshots</h3>
 <p align="center">
-<img src="https://github.com/raziman869/AutoScriptDB/raw/master/Snapshots/1.png">
+<img src="https://github.com/xiihaiqal/AutoScriptDB/raw/master/Snapshots/1.png">
    </p>
   <p align="center">
-  <img src="https://github.com/raziman869/AutoScriptDB/raw/master/Snapshots/2.png">
+  <img src="https://github.com/xiihaiqal/AutoScriptDB/raw/master/Snapshots/2.png">
    </p>
   <p align="center">
-  <img src="https://github.com/raziman869/AutoScriptDB/raw/master/Snapshots/3.png">
+  <img src="https://github.com/xiihaiqal/AutoScriptDB/raw/master/Snapshots/3.png">
   </p>
   <p align="center">
-  <img src="https://github.com/raziman869/AutoScriptDB/raw/master/Snapshots/4.png">
+  <img src="https://github.com/xiihaiqal/AutoScriptDB/raw/master/Snapshots/4.png">
    </p>
    
