@@ -168,7 +168,7 @@ MySSHConfig
 NO_START=0
 DROPBEAR_PORT=PORT01
 DROPBEAR_EXTRA_ARGS="-p PORT02"
-DROPBEAR_BANNER="/etc/banner"
+DROPBEAR_BANNER="/etc/issue.net"
 DROPBEAR_RSAKEY="/etc/dropbear/dropbear_rsa_host_key"
 DROPBEAR_DSSKEY="/etc/dropbear/dropbear_dss_host_key"
 DROPBEAR_ECDSAKEY="/etc/dropbear/dropbear_ecdsa_host_key"
@@ -192,7 +192,7 @@ cat <<'MyStunnelD' > /etc/default/$StunnelDir
 ENABLED=1
 FILES="/etc/stunnel/*.conf"
 OPTIONS=""
-BANNER="/etc/banner"
+BANNER="/etc/issue.net"
 PPP_RESTART=0
 # RLIMITS="-n 4096 -d unlimited"
 RLIMITS=""
@@ -671,7 +671,7 @@ reply_header_access Cookie allow all
 reply_header_access All deny all
 ### CoreDump
 coredump_dir /var/spool/squid
-dns_nameservers 8.8.8.8 8.8.4.4
+dns_nameservers 77.88.8.7 77.88.8.3
 refresh_pattern ^ftp: 1440 20% 10080
 refresh_pattern ^gopher: 1440 0% 1440
 refresh_pattern -i (/cgi-bin/|\?) 0 0% 0
@@ -741,8 +741,8 @@ nice -20
 reneg-sec 0
 redirect-gateway def1
 setenv CLIENT_CERT 0
-dhcp-option DNS 1.1.1.1
-dhcp-option DNS 1.0.0.1
+dhcp-option DNS 77.88.8.7
+dhcp-option DNS 77.88.8.3
 http-proxy $IPADDR $Privoxy_Port1
 http-proxy-option VERSION 1.1
 http-proxy-option CUSTOM-HEADER ""
@@ -877,8 +877,8 @@ nice -20
 reneg-sec 0
 redirect-gateway def1
 setenv CLIENT_CERT 0
-dhcp-option DNS 1.1.1.1
-dhcp-option DNS 1.0.0.1
+dhcp-option DNS 77.88.8.7
+dhcp-option DNS 77.88.8.3
 http-proxy $IPADDR $Privoxy_Port1
 http-proxy-option VERSION 1.1
 http-proxy-option CUSTOM-HEADER Host www.googleapis.com
@@ -914,8 +914,8 @@ nice -20
 reneg-sec 0
 redirect-gateway def1
 setenv CLIENT_CERT 0
-dhcp-option DNS 1.1.1.1
-dhcp-option DNS 1.0.0.1
+dhcp-option DNS 77.88.8.7
+dhcp-option DNS 77.88.8.3
 http-proxy $IPADDR $Privoxy_Port1
 http-proxy-option CUSTOM-HEADER CONNECT HTTP/1.0
 http-proxy-option CUSTOM-HEADER Host shopee.ph
@@ -953,8 +953,8 @@ nice -20
 reneg-sec 0
 redirect-gateway def1
 setenv CLIENT_CERT 0
-dhcp-option DNS 1.1.1.1
-dhcp-option DNS 1.0.0.1
+dhcp-option DNS 77.88.8.7
+dhcp-option DNS 77.88.8.3
 http-proxy $IPADDR 3356
 http-proxy-option CUSTOM-HEADER ""
 http-proxy-option CUSTOM-HEADER "POST https://viber.com HTTP/1.1"
