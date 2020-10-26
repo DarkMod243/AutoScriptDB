@@ -10,7 +10,7 @@ MyScriptName='KingKongVPN-Premium Script'
 # OpenSSH Ports
 SSH_Port1='22'
 SSH_Port2='53'
-SSH_Port2='80'
+SSH_Port2='88'
 
 # Your SSH Banner
 SSH_Banner='https://raw.githubusercontent.com/xiihaiqal/AutoScriptDB/main/Files/Plugins/banner'
@@ -34,13 +34,13 @@ Privoxy_Port2='8086'
 # Squid Ports
 Squid_Port1='3128'
 Squid_Port2='8080'
-Squid_Port3='80'
+Squid_Port3='8000'
 
 # OpenVPN Config Download Port
 OvpnDownload_Port='80' # Before changing this value, please read this document. It contains all unsafe ports for Google Chrome Browser, please read from line #23 to line #89: https://chromium.googlesource.com/chromium/src.git/+/refs/heads/main/net/base/port_util.cc
 
 # Server local time
-MyVPS_Time='Asia/Manila'
+MyVPS_Time='Asia/Kuala_Lumpur'
 #############################
 
 
