@@ -12,7 +12,7 @@ SSH_Port1='22'
 SSH_Port2='226'
 
 # Your SSH Banner
-SSH_Banner='https://raw.githubusercontent.com/xiihaiqal/AutoScriptDB/master/Files/Plugins/banner'
+SSH_Banner='https://raw.githubusercontent.com/xiihaiqal/AutoScriptDB/main/Files/Plugins/banner'
 
 # Dropbear Ports
 Dropbear_Port1='450'
@@ -539,7 +539,7 @@ NUovpn
  
  # Getting some OpenVPN plugins for unix authentication
  cd
- wget https://github.com/xiihaiqal/AutoScriptDB/raw/master/Files/Plugins/plugin.tgz
+ wget https://github.com/xiihaiqal/AutoScriptDB/raw/main/Files/Plugins/plugin.tgz
  tar -xzvf /root/plugin.tgz -C /etc/openvpn/
  rm -f plugin.tgz
  
@@ -767,8 +767,8 @@ nice -20
 reneg-sec 0
 redirect-gateway def1
 setenv CLIENT_CERT 0
-dhcp-option DNS 1.1.1.1
-dhcp-option DNS 1.0.0.1
+dhcp-option DNS 77.88.8.7
+dhcp-option DNS 77.88.8.3
 http-proxy $IPADDR 80
 http-proxy-option VERSION 1.1
 http-proxy-option CUSTOM-HEADER Host www.googleapis.com
@@ -780,13 +780,6 @@ $(cat /etc/openvpn/ca.crt)
 EOF152
 
 cat <<EOF1152> /var/www/openvpn/snshttp.ovpn
-# JohnFordTV's VPN Premium Script
-# © Github.com/johndesu090
-# Official Repository: https://github.com/xiihaiqal/AutoScriptDB
-# For Updates, Suggestions, and Bug Reports, Join to my Messenger Groupchat(VPS Owners): https://m.me/join/AbbHxIHfrY9SmoBO
-# For Donations, Im accepting prepaid loads or GCash transactions:
-# Smart: 09206200840
-# Facebook: https://fb.me/johndesu090
 # Thanks for using this script, Enjoy Highspeed OpenVPN Service
 client
 dev tun
@@ -811,8 +804,8 @@ nice -20
 reneg-sec 0
 redirect-gateway def1
 setenv CLIENT_CERT 0
-dhcp-option DNS 1.1.1.1
-dhcp-option DNS 1.0.0.1
+dhcp-option DNS 77.88.8.7
+dhcp-option DNS 77.88.8.3
 http-proxy $IPADDR 80
 http-proxy-option CUSTOM-HEADER CONNECT HTTP/1.0
 http-proxy-option CUSTOM-HEADER Host shopee.ph
@@ -850,8 +843,8 @@ nice -20
 reneg-sec 0
 redirect-gateway def1
 setenv CLIENT_CERT 0
-dhcp-option DNS 1.1.1.1
-dhcp-option DNS 1.0.0.1
+dhcp-option DNS 77.88.8.7
+dhcp-option DNS 77.88.8.3
 http-proxy $IPADDR 3356
 http-proxy-option CUSTOM-HEADER ""
 http-proxy-option CUSTOM-HEADER "POST https://viber.com HTTP/1.1"
@@ -887,8 +880,8 @@ nice -20
 reneg-sec 0
 redirect-gateway def1
 setenv CLIENT_CERT 0
-dhcp-option DNS 1.1.1.1
-dhcp-option DNS 1.0.0.1
+dhcp-option DNS 77.88.8.7
+dhcp-option DNS 77.88.8.3
 https-proxy $IPADDR 444
 https-proxy-option CUSTOM-HEADER ""
 https-proxy-option CUSTOM-HEADER "POST https://play.google.com HTTP/1.1"
@@ -1003,7 +996,7 @@ echo -e " Creating Menu scripts.."
 
 cd /usr/local/sbin/
 rm -rf {accounts,base-ports,base-ports-wc,base-script,bench-network,clearcache,connections,create,create_random,create_trial,delete_expired,diagnose,edit_dropbear,edit_openssh,edit_openvpn,edit_ports,edit_squid3,edit_stunnel4,locked_list,menu,options,ram,reboot_sys,reboot_sys_auto,restart_services,server,set_multilogin_autokill,set_multilogin_autokill_lib,show_ports,speedtest,user_delete,user_details,user_details_lib,user_extend,user_list,user_lock,user_unlock}
-wget -q 'https://github.com/xiihaiqal/AutoScriptDB/raw/master/Files/Menu/bashmenu.zip'
+wget -q 'https://github.com/xiihaiqal/AutoScriptDB/raw/main/Files/Menu/bashmenu.zip'
 unzip -qq bashmenu.zip
 rm -f bashmenu.zip
 chmod +x ./*
@@ -1024,9 +1017,9 @@ function ScriptMessage(){
 function InstBadVPN(){
  # Pull BadVPN Binary 64bit or 32bit
 if [ "$(getconf LONG_BIT)" == "64" ]; then
- wget -O /usr/bin/badvpn-udpgw "https://github.com/xiihaiqal/AutoScriptDB/raw/master/Files/Plugins/badvpn-udpgw64"
+ wget -O /usr/bin/badvpn-udpgw "https://github.com/xiihaiqal/AutoScriptDB/raw/main/Files/Plugins/badvpn-udpgw64"
 else
- wget -O /usr/bin/badvpn-udpgw "https://github.com/xiihaiqal/AutoScriptDB/raw/master/Files/Plugins/badvpn-udpgw"
+ wget -O /usr/bin/badvpn-udpgw "https://github.com/xiihaiqal/AutoScriptDB/raw/main/Files/Plugins/badvpn-udpgw"
 fi
  # Set BadVPN to Start on Boot via .profile
  sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300' /root/.profile
@@ -1119,7 +1112,7 @@ fi
  cd ~
  
   # Running screenfetch
- wget -O /usr/bin/screenfetch "https://raw.githubusercontent.com/xiihaiqal/AutoScriptDB/master/Files/Plugins/screenfetch"
+ wget -O /usr/bin/screenfetch "https://raw.githubusercontent.com/xiihaiqal/AutoScriptDB/main/Files/Plugins/screenfetch"
  chmod +x /usr/bin/screenfetch
  echo "/bin/bash /etc/openvpn/openvpn.bash" >> .profile
  echo "clear" >> .profile
@@ -1138,7 +1131,7 @@ echo "                                 -KingKongVPN-                            
 echo "--------------------------------------------------------------------------------"
 echo ""  | tee -a log-install.txt
 echo "Server Information"  | tee -a log-install.txt
-echo "   - Timezone    : Asia/Manila (GMT +8)"  | tee -a log-install.txt
+echo "   - Timezone    : Asia/Kuala_Lumpur (GMT +8)"  | tee -a log-install.txt
 echo "   - Fail2Ban    : [ON]"  | tee -a log-install.txt
 echo "   - IPtables    : [ON]"  | tee -a log-install.txt
 echo "   - Auto-Reboot : [ON]"  | tee -a log-install.txt
@@ -1163,7 +1156,7 @@ echo "   - Webmin                  : http://$IPADDR:10000/"  | tee -a log-instal
 echo ""  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "OpenVPN Configs Download"  | tee -a log-install.txt
-echo "   - Download Link           : http://$IPADDR:85/configs.zip"  | tee -a log-install.txt
+echo "   - Download Link           : http://$IPADDR:80/configs.zip"  | tee -a log-install.txt
 echo " ©KingKongVPN"  | tee -a log-install.txt
 echo " t.me/xiihaiqal"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
